@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>请输入数字：</p>
+    <input type="text">
+    <button>提交</button>
+</body>
+<script>
+    const ip=document.getElementsByTagName("input")[0];
+    const bt=document.getElementsByTagName("button")[0];
+    bt.onclick=function () {
+        window.location.href=`/${ip.value}`
+    }
+</script>
+</html>
